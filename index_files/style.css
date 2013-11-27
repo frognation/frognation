@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    background-color:white;
+    
+}
+
+@-webkit-keyframes anim1 {
+    0% {
+        -webkit-transform: translate(0px, 330px);
+        
+    }
+    50% {
+        -webkit-transform: translate(350px, 330px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 330px);
+       
+    }
+}
+
+#HAL {
+    position: relative;
+    margin: none;    
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-mask-image: url(../image/HAL.png);
+    -webkit-mask-size: 100px 100px;
+    -webkit-animation: anim1 2s infinite;
+    
+    
+}
+
+#stage {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    margin: auto;
+    -webkit-perspective: 300px center center;
+}
+
+#floor {
+    width:400px;
+    height:80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-mask-image: url(../image/tata.gif);
+    -webkit-mask-size: 350px 80px;
+    position: absolute;
+    -webkit-transform: translate(0px, 300px) rotateX(90deg);
+    font-size: 50px;
+    line-height:80px;
+    text-align:center;
+    font-family: helvetica;
+
+}
+
+
+#door1 {    
+    width:100px;
+    height:300px;
+    margin:20px;
+    background-color: red;
+    -webkit-mask-image: url(../image/door.gif);
+    -webkit-mask-size: 100px 300px;
+    float: left;
+    font-size: 50px;
+    line-height:80px;
+    text-align:center;
+    font-family: helvetica;
+}
+
+#door2 {    
+    width:100px;
+    height:300px;
+    margin:20px;
+    background-color: red;
+    -webkit-mask-image: url(../image/door.gif);
+    -webkit-mask-size: 100px 300px;
+    float: right;
+    font-size: 50px;
+    line-height:80px;
+    text-align:center;
+    font-family: helvetica;
+}
+
+#doors {    
+    width:370px;
+    height:320px;
+    margin:auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    float: center;
+    font-size: 50px;
+    line-height:80px;
+    text-align:center;
+    font-family: helvetica;
+}
+
+
+
+#scene {    
+    width:400px;
+    height: 500px;
+    background-color: none;
+    -webkit-transform: rotateX(-30deg) rotateY(30deg) translate(0px, 100px);
+    -webkit-transform-style: preserve-3d;
+
+}
